@@ -388,12 +388,12 @@ do
   require('catppuccin').setup {
     flavor = 'auto',
     background = {
-      light = "latte",
-      dark = "frappe",
+      light = 'latte',
+      dark = 'mocha',
     },
     styles = {
-      comments = { "italic" }, -- italicize comments
-      conditionals = { "italic" }, -- italicize conditionals
+      comments = { 'italic' }, -- italicize comments
+      conditionals = { 'italic' }, -- italicize conditionals
     },
     transparent_background = true,
   }
@@ -799,10 +799,10 @@ do
     formatters_by_ft = {
       rust = { 'rustfmt' },
       -- Conform can also run multiple formatters sequentially
-      python = { "isort", "black" },
+      python = { 'isort', 'black' },
       --
       -- You can use 'stop_after_first' to run the first available formatter from the list
-      javascript = { "prettierd", "prettier", stop_after_first = true },
+      javascript = { 'prettierd', 'prettier', stop_after_first = true },
     },
   }
 
@@ -884,7 +884,7 @@ do
     -- the rust implementation via `'prefer_rust_with_warning'`
     --
     -- See `:help blink-cmp-config-fuzzy` for more information
-    fuzzy = { implementation = 'lua' },
+    fuzzy = { implementation = 'rust' },
 
     -- Shows a signature help window while you type arguments for a function
     signature = { enabled = true },
